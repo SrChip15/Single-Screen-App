@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udacity.avidprogrammer.kickmecoffeehouse.MainActivity" >
+
+    <ImageView
+        android:id="@+id/Photo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Photo"
+        android:layout_margin="10dp"
+        android:background="#e3f2fd"
+        android:fontFamily="georgia"
+        android:text="Kick Me!"
+        android:textColor="#616161"
+        android:textSize="32sp"/>
+
+    <ImageView
+        android:id="@+id/LocationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/Name"
+        android:layout_margin="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/location-icon"/>
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/LocationIcon"
+        android:text="100 Bravo Ln"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/Web-icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/Address"
+        android:layout_margin="20dp"
+        android:src="@drawable/web-icon" />
+
+    <TextView
+        android:id="@+id/Website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Address"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/Web-icon"
+        android:text="www.kickmecoffee.com"
+        android:textSize="16sp" />
+
+</RelativeLayout>
