@@ -1,67 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.udacity.avidprogrammer.kickmecoffeehouse.MainActivity" >
+    tools:context="com.udacity.avidprogrammer.kickmecoffeehouse.MainActivity">
 
     <ImageView
         android:id="@+id/Photo"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"/>
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coffeehouse" />
 
     <TextView
         android:id="@+id/Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_below="@id/Photo"
-        android:layout_margin="10dp"
-        android:background="#e3f2fd"
-        android:fontFamily="georgia"
+        android:background="#2979ff"
         android:text="Kick Me!"
-        android:textColor="#616161"
-        android:textSize="32sp"/>
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/Type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:background="#2979ff"
+        android:text="CoffeeHouse"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/LocationIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_alignParentLeft="true"
-        android:layout_below="@id/Name"
-        android:layout_margin="20dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/location-icon"/>
+        android:layout_below="@id/Type"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/locationicon" />
 
     <TextView
         android:id="@+id/Address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Name"
-        android:layout_margin="10dp"
+        android:layout_below="@id/Type"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/LocationIcon"
-        android:text="100 Bravo Ln"
-        android:textSize="16sp" />
+        android:text="100 Bravo Ln, Denver, CO 80123"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        android:typeface="sans" />
 
     <ImageView
-        android:id="@+id/Web-icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/WebIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/Address"
-        android:layout_margin="20dp"
-        android:src="@drawable/web-icon" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/webicon" />
 
     <TextView
         android:id="@+id/Website"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/Address"
-        android:layout_margin="10dp"
-        android:layout_toRightOf="@id/Web-icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/WebIcon"
         android:text="www.kickmecoffee.com"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/Phone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/Website"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/PhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Website"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/Phone"
+        android:text="(970) 391-4219"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/Clock"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/Phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/clock" />
+
+    <TextView
+        android:id="@+id/Timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PhoneNumber"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/Clock"
+        android:text="Weekdays ONLY. 6AM to 5PM"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Clock"
+        android:layout_margin="20dp"
+        android:text="Denver-based coffeehouse chain known for its strong signature roasts that kicks your brain into full throttle. The coffeehouse also boasts high-speed WiFi availability."
+        android:textColor="@android:color/background_dark"
         android:textSize="16sp" />
 
 </RelativeLayout>
