@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">WakeMeUp</string>
+
+    <string name="title">Wake Me Up!</string>
+    <string name="sub_title">CoffeeHouse</string>
+    <string name="address">100 Bravo Ln, Denver, CO 80123</string>
+    <string name="website">www.wakemecoffee.com</string>
+    <string name="phone_number">(970) 391–4219</string>
+    <string name="timings">Weekdays ONLY. 6AM to 5PM</string>
+    <string name="description">
+        Denver-based coffeehouse chain known for its strong signature roasts
+        that kicks your brain into full throttle.
+        The coffeehouse also boasts high-speed WiFi availability.
+    </string>
+
+    <!-- Content description text for all the image views used in the UI -->
+    <string name="banner_image_cd">Banner image for the business. A cup of coffee alongside a tray of refreshments</string>
+    <string name="location_balloon_cd">Tiny balloon image icon indicative of the address of the physical location of the business</string>
+    <string name="website_icon_cd">Tiny globe icon label indicative of a website address</string>
+    <string name="telephone_image_cd">Tiny telephone icon label indicative of a phone number</string>
+    <string name="timings_image_cd">Tiny clock icon label indicative of the timings of the establishment</string>
 </resources>
