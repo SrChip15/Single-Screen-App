@@ -12,4 +12,4 @@ Android API 27 <br>
 AppCompat Library v7 <br>
 
 ### Screenshot
-![alt text](https://raw.githubusercontent.com/SrChip15/single-screen-app/master/device-2017-12-02-202137.png)
+<img src="https://raw.githubusercontent.com/SrChip15/single-screen-app/master/device-2017-12-02-202137.png" height="300" width="200")
