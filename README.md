@@ -11,6 +11,6 @@ Gradle version 4.1 <br>
 Android API 27 <br>
 AppCompat Library v7 <br>
 
-### Screenshot
+# Screenshot
 <img src="https://raw.githubusercontent.com/SrChip15/single-screen-app/master/device-2017-12-02-202137.png"
 width="300"/>
